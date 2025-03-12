@@ -3,7 +3,7 @@
 import { parseTranslation } from "@/utils/utilts";
 import { useEffect, useState } from "react";
 
-interface PageData {
+export interface PageData {
   text: string;
   pagenumber?: string;
   page: number;
