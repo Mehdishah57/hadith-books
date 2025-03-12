@@ -7,7 +7,7 @@ interface PageData {
   pagenumber: string;
   page: number;
   translation: string;
-  footnote: string;
+  footnote?: string;
 }
 
 interface BookViewerProps {
@@ -49,7 +49,7 @@ const BookViewer: React.FC<BookViewerProps> = ({ data }) => {
       <div className="flex flex-col gap-4 h-[90%]">
         {/* Arabic Text */}
         <div className="border p-4 rounded-lg text-right h-[45%] md:h-full overflow-auto">
-          <h3 className="text-lg font-semibold mb-2">📖 Arabic</h3>
+          <h3 className="text-lg font-semibold mb-2">📖 Arabic {data[currentPage]?.pagenumber}</h3>
           <p className="text-gray-800 text-xl mb-4">{data[currentPage]?.text}</p>
           {data[currentPage]?.footnote?.split("\n").map(note => <p key={note} className="mt-2 text-gray-400">{note}</p>)}
           
