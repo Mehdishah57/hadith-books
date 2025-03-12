@@ -3,7 +3,8 @@ import Link from "next/link"
 export default function Home() {
   const links = [
     { label: "Al-Fehrist By Shaykh Tusi", model: "gpt-4o-mini", link: "/al-fehrist-tusi" },
-    { label: "Al-Muqanna By Shaykh Sadooq", model: "gpt-4o", link: "/al-muqanna" }
+    { label: "Al-Muqanna By Shaykh Sadooq", model: "gpt-4o", link: "/al-muqanna" },
+    { label: "Al-Istibsar By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v1" }
   ]
 
   return (
