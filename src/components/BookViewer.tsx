@@ -32,7 +32,7 @@ const BookViewer: React.FC<BookViewerProps> = ({ data }) => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto h-[90vh] overflow-hidden p-4 bg-white shadow-lg rounded-lg">
+    <div className="max-w-7xl mx-auto h-[100vh] md:h-[90vh] flex flex-col overflow-hidden p-4 bg-white shadow-lg rounded-lg">
       <h2 className="text-xl font-bold text-center mb-4 text-black flex gap-2 justify-center items-center">
         Go to page <input className="border-[1px] border-gray-400 rounded md px-4 w-[90px]" value={inputPage} type="number" onChange={e => {
           setPage(e.currentTarget.valueAsNumber)
@@ -47,20 +47,20 @@ const BookViewer: React.FC<BookViewerProps> = ({ data }) => {
 
       <div className="flex flex-col gap-4 h-[90%]">
         {/* Arabic Text */}
-        <div className="border p-4 rounded-lg text-right h-full overflow-auto">
+        <div className="border p-4 rounded-lg text-right h-[45%] md:h-full overflow-auto">
           <h3 className="text-lg font-semibold mb-2">📖 Arabic</h3>
           <p className="text-gray-800 text-xl">{data[currentPage]?.text}</p>
         </div>
 
         {/* English Translation */}
-        <div className="border p-4 rounded-lg h-full overflow-auto">
+        <div className="border p-4 rounded-lg h-[45%] md:h-full overflow-auto">
           <h3 className="text-lg font-semibold mb-2">📝 Translation</h3>
           <p className="text-gray-800 text-xl">{data[currentPage]?.translation}</p>
         </div>
       </div>
 
       {/* Pagination Controls */}
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between md:mt-4">
         <button
           className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50 cursor-pointer"
           onClick={prevPage}
