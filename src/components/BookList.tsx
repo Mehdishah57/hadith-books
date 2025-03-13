@@ -15,6 +15,7 @@ const BookList = () => {
         // { label: "Al-Istibsar Volume 4 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v4" }
         { label: "Al-Mahasin Volume 1 By Al-Barqi",  model: "gemini-2.0-flash", link: "/al-mahasin/v1" },
         { label: "Al-Mahasin Volume 2 By Al-Barqi",  model: "gemini-2.0-flash", link: "/al-mahasin/v2" },
+        { label: "Rijal Al-Nijashi",  model: "gemini-2.0-flash", link: "/rijal-nijashi" },
     ]
 
     return (
