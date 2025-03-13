@@ -2,12 +2,9 @@
 
 import { useAppSelector } from "@/lib/hooks"
 import Link from "next/link"
-import { useEffect } from "react"
 
 const BookList = () => {
     const { bookSearch } = useAppSelector(state => state.app)
-
-    useEffect(() => console.log(bookSearch), [bookSearch])
 
     const links = [
         { label: "Al-Fehrist By Shaykh Tusi", model: "gpt-4o-mini", link: "/al-fehrist-tusi" },
@@ -16,6 +13,8 @@ const BookList = () => {
         // { label: "Al-Istibsar Volume 2 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v2" },
         // { label: "Al-Istibsar Volume 3 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v3" },
         // { label: "Al-Istibsar Volume 4 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v4" }
+        { label: "Al-Mahasin Volume 1 By Al-Barqi",  model: "gemini-2.0-flash", link: "/al-mahasin/v1" },
+        { label: "Al-Mahasin Volume 2 By Al-Barqi",  model: "gemini-2.0-flash", link: "/al-mahasin/v2" },
     ]
 
     return (
