@@ -10,9 +10,9 @@ const BookList = () => {
         { label: "Al-Fehrist By Shaykh Tusi", model: "gpt-4o-mini", link: "/al-fehrist-tusi" },
         { label: "Al-Muqanna By Shaykh Sadooq", model: "gpt-4o", link: "/al-muqanna" },
         { label: "Al-Istibsar Volume 1 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v1" },
-        // { label: "Al-Istibsar Volume 2 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v2" },
-        // { label: "Al-Istibsar Volume 3 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v3" },
-        // { label: "Al-Istibsar Volume 4 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v4" }
+        { label: "Al-Istibsar Volume 2 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v2" },
+        { label: "Al-Istibsar Volume 3 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v3" },
+        { label: "Al-Istibsar Volume 4 By Shaykh Tusi",  model: "gemini-2.0-flash", link: "/al-istibsar/v4" },
         { label: "Al-Mahasin Volume 1 By Al-Barqi",  model: "gemini-2.0-flash", link: "/al-mahasin/v1" },
         { label: "Al-Mahasin Volume 2 By Al-Barqi",  model: "gemini-2.0-flash", link: "/al-mahasin/v2" },
         { label: "Rijal Al-Nijashi",  model: "gemini-2.0-flash", link: "/rijal-nijashi" },
