@@ -16,6 +16,8 @@ const BookList = () => {
         { label: "Al-Mahasin Volume 1 By Al-Barqi",  model: "gemini-2.0-flash", link: "/al-mahasin/v1" },
         { label: "Al-Mahasin Volume 2 By Al-Barqi",  model: "gemini-2.0-flash", link: "/al-mahasin/v2" },
         { label: "Rijal Al-Nijashi",  model: "gemini-2.0-flash", link: "/rijal-nijashi" },
+        { label: "Ikhtyar Marifat Rijal - Rijal Kashi Volume 1",  model: "gemini-2.0-flash", link: "/rijal-kashi/v1" },
+        { label: "Ikhtyar Marifat Rijal - Rijal Kashi Volume 2",  model: "gemini-2.0-flash", link: "/rijal-kashi/v2" },
     ]
 
     return (
